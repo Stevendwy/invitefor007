@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+   <image class="header-img" mode="widthFix" src="../../image/p_img.png"></image>
+  </view>
+  
+  <view class="body" >
+    <view class="body-input">
+     <input class="body-input-input phone" type="text" placeholder="手机号" />
+     <input class="body-input-input names" type="text" placeholder="姓名" />
+     <input class="body-input-input factory" type="text" placeholder="公司名称" />
+     <input class="body-input-input city" type="text" placeholder="城市" />
+    </view>
+    <view class="body-type">
+     <view class="body-type-child" wx:for="{{datalist}}">
+          {{item}}
+      </view>
+    </view>
+    <view class="body-bottom">
+      <text class="type-world">选择公司类型</text>
+      <button class="type-submit">提交</button>
+    </view>
+  </view>
+  
+ <view class="footer">
+  <image class="footer-img" mode="widthFix" src="../../image/p_car.png"></image>
+ </view>
+</view>
