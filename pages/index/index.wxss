@@ -60,10 +60,13 @@
   align-items: center;
   font-family: PingFangSC-Regular;
   font-size: 24rpx;
+}
+.typechildno{
   color: #0D6FB8;
 }
 .typechild{
   background: #0D6FB8;
+  color: #FFFFFF;
 }
 .body-bottom{
   width: 80%;
@@ -82,4 +85,5 @@
   border-radius: 2px;
   font-size: 24rpx;
   color: #FFFFFF;
+  line-height:88rpx;
 }

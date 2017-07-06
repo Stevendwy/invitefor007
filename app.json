@@ -1,6 +1,8 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/topay/index",
+    "pages/okpay/index",
     "pages/logs/logs"
   ],
   "window":{

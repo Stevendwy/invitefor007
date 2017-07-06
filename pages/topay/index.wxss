@@ -1,0 +1,22 @@
+/* pages/topay/index.wxss */
+.header{
+  display: flex;
+  min-height: 511rpx;
+  width: 100%;
+  flex-direction: column;
+  background-image: url(http://s.tc.blyoo.cn/cloud/g/i9/4e6cd0d837941dfa.png);
+  background-size: auto;
+  background-repeat: round;
+}
+
+.header .header-img{
+  width: 100%;
+}
+
+.footer{
+  width: 100%;
+  display: flex;
+}
+.footer .footer-img{
+  width: 100%;
+}

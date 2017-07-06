@@ -5,21 +5,25 @@
   </view>
   
   <view class="body" >
+    <form bindsubmit="formSubmit">
     <view class="body-input">
-     <input class="body-input-input phone" type="text" placeholder="手机号" />
-     <input class="body-input-input names" type="text" placeholder="姓名" />
-     <input class="body-input-input factory" type="text" placeholder="公司名称" />
-     <input class="body-input-input city" type="text" placeholder="城市" />
+     <input class="body-input-input phone" name="inputphone" type="text" placeholder="手机号" />
+     <input class="body-input-input names" name="inputname" type="text" placeholder="姓名" />
+     <input class="body-input-input factory" name="inputfactory" type="text" placeholder="公司名称" />
+     <input class="body-input-input city" name="inputcity" type="text" placeholder="城市" />
     </view>
-    <view class="body-type">
-     <view class="body-type-child" wx:for="{{datalist}}">
-          {{item}}
-      </view>
+    <view class="body-type" >
+      <block wx:for="{{datalist}}" wx:key="{{item.clickid}}" wx:for-index="idx">
+        <view class="{{userclickid==idx?'body-type-child typechild':'body-type-child typechildno'}}" 
+      data-idx="{{idx}}" bindtap="typeClick" >{{item.name}}</view>
+      </block>
     </view>
+    
     <view class="body-bottom">
       <text class="type-world">选择公司类型</text>
-      <button class="type-submit">提交</button>
+      <button class="type-submit" formType="submit">提交</button>
     </view>
+    </form>
   </view>
   
  <view class="footer">

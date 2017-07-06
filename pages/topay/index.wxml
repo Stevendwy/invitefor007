@@ -1,0 +1,10 @@
+<!--pages/topay/index.wxml-->
+<view class="container">
+ <view class="header">
+  <image  mode="widthFix" class="header-img" src="{{imgdata}}"></image>
+ </view>
+</view>
+
+<view class="footer">
+  <image class="footer-img" mode="widthFix" src="../../image/p_car.png"></image>
+ </view>
