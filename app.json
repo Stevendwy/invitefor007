@@ -1,8 +1,11 @@
 {
-  "pages":[
+  "pages":[   
+    
     "pages/index/index",
     "pages/topay/index",
     "pages/okpay/index",
+    "pages/title/index",
+    "pages/swiper/index",
     "pages/logs/logs"
   ],
   "window":{
